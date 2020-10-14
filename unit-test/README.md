@@ -6,7 +6,7 @@
 
 ### My Reasoning
 1. Makes it easier to make changes in the long run
-   - For example, using something like (RenovateBot)[https://github.com/renovatebot/renovate] to automatically update dependencies
+   - For example, using something like [RenovateBot](https://github.com/renovatebot/renovate) to automatically update dependencies
    - Accepting code changes from the open source community 
 2. Documentation as a side effect
 
