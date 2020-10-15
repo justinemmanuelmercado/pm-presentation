@@ -12,5 +12,5 @@
 1. `cd` inside the [unit-test](/unit-test) directory
 2. Run `npm install`
 
-## [React](/react)
+## [React Demo](/react-demo)
 ## [Node Deployment](/node-deployment)
