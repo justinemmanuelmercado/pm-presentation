@@ -6,22 +6,23 @@
 
 ### My Reasoning
 1. Makes it easier to make changes in the long run
-   - For example, using something like [RenovateBot](https://github.com/renovatebot/renovate) to automatically update dependencies
-   - Accepting code changes from the open source community 
+   - Accepting code changes from the open source community
+   - Code refactors won't break anything with unit tests
+   - Adding features to the app won't break anything with unit tests
 2. Documentation as a side effect
 
 ## How to unit test in TS
 
-### [Great article explaining different ways to unit test with jest](http://zetcode.com/javascript/jest/)
+### [Great article explaining different ways use jest](http://zetcode.com/javascript/jest/)
 
 1. Setup the project to use the testing framework ([I use jest](https://jestjs.io/))
 2. Write tests to test each "unit" of code. [StackOverflow thread trying to describe a "unit"](https://stackoverflow.com/questions/1066572/what-should-a-unit-be-when-unit-testing)
-3. There isn't any solid rules to unit testing, conventional wisdom does dictate that unit tests are written in parallel/before writing the actual code
-4. TDD is a development paradigm where the programmer must write "failing" unit tests first before writing the actual unit of code.
+    * There isn't any solid rules to unit testing, conventional wisdom does dictate that unit tests are written in parallel/before writing the actual code
 
 ## How to use Jest to test our Typescript code
 
 ### [Long article explaining how to set up jest](https://basarat.gitbook.io/typescript/intro-1/jest)
+### [Possible matchers for expect](https://jestjs.io/docs/en/expect)
 
 ### Short summary
 
