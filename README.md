@@ -1,5 +1,9 @@
 # Presentation
 
+## Modern Web Architecture
+
+<img src='./WebArch.svg'></img>
+
 ## Prerequisites
 
 * Basic familiarity with the command line
@@ -14,3 +18,6 @@
 
 ## [React Demo](/react-demo)
 ## [Node Deployment](/node-deployment)
+
+## References
+

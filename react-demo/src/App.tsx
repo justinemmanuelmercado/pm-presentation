@@ -1,9 +1,13 @@
-import React, { useState } from 'react' // For functional
+import React, { useState, useEffect } from 'react' // For functional
 // import React, { Component } from 'react' // For component
 import './App.css'
 import axios from 'axios'
 
 const apiUrl = process.env.REACT_APP_API_URL
+
+const Header = (props: { title: string }) => {
+  return <h1>{props.title}</h1>
+}
 
 export function App() {
   const [isUp, setIsUp] = useState(false)
@@ -22,8 +26,13 @@ export function App() {
       }
     } catch (e) {
       console.error(e)
+      setIsUp(false)
     }
   }
+
+  useEffect(() => {
+    handleCheckApi()
+  })
 
   const handleSubmit = async (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault()
@@ -47,6 +56,7 @@ export function App() {
   }
 
   return <div className="container">
+    <Header title="Function component with hooks"/>
     <div>
       <button onClick={handleCheckApi}>Check Local API</button>
     </div>
@@ -70,6 +80,10 @@ export function App() {
 //     number2: '',
 //   }
 
+//   componentDidMount() {
+//     this.handleCheckApi()
+//   }
+
 //   handleCheckApi = async () => {
 //     try {
 //       const { data } = await axios.get(`${apiUrl}/check`)
@@ -85,6 +99,7 @@ export function App() {
 //       }
 //     } catch (e) {
 //       console.error(e)
+//       setIsUp(false)
 //     }
 //   }
 
@@ -93,7 +108,7 @@ export function App() {
 //     console.log(apiUrl)
 //     try {
 //       const { number1, number2 } = this.state
-//       const { data } = await axios.post(`${apiUrl}/add`, { number1, number2 })
+//       const { data } = await axios.post(`${apiUrl}/add`, { number1: Number(number1), number2: Number(number2) })
 //       const { result } = data
 //       this.setState({
 //         result
@@ -117,6 +132,7 @@ export function App() {
 //     const { handleSubmit, handleCheckApi, handleChange, state } = this
 //     const { isUp, result } = state
 //     return <div className="container">
+//       <Header title='Class component'/>
 //       <div>
 //         <button onClick={handleCheckApi}>Check Local API</button>
 //       </div>
