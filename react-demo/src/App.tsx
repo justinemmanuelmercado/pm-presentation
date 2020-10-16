@@ -129,8 +129,8 @@ export function App() {
 
 
 //   render() {
-//     const { handleSubmit, handleCheckApi, handleChange, state } = this
-//     const { isUp, result } = state
+//     const { handleSubmit, handleCheckApi, handleChange } = this
+//     const { isUp, result } = this.state // equivalent to this.state
 //     return <div className="container">
 //       <Header title='Class component'/>
 //       <div>
