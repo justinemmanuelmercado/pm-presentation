@@ -10,21 +10,23 @@
   - [HOW THINGS ARE MADE WITH REACT](#how-things-are-made-with-react)
 
 # MODERN WEB Architecture
-I feel that this is an important topic to tackle first beforehand to get some context on how node and react apps talk to each other
+I feel that this is an important topic to tackle first to get some context on how node and react apps talk to each other
 
 So here in this diagram we can see a client, a web server, app server, database and static assets
 
 Client is everything that runs in a web browser, this is where the react code will run, it will always run in the context of the user's web browser
 
-Next is the app server and the web server, this is where a typical node project will live. A web server can be a Linux VPS(Virtual Private Server) running Nginx to serve the app server which is a node app running in a docker container. These specific technology isn't all that neccessary you can replace node with a PHP app being served directly by Apache on a Linux VPS
+Next is the app server and the web server, this is where a typical node project will live. A web server can be a Linux VPS(Virtual Private Server) running Nginx to serve the app server which is a node app running in a docker container. The specific technology used isn't important, for example you can replace node with a PHP app being served directly by Apache on a Linux VPS
 
-The database is self explanatory, and the static assets include things like images, videos, sound files.
+The database is self explanatory and it usually runs on the web server itself, and the static assets include things like images, videos, sound files.
 
-A modern popular tech stack like this can be a React app as the client, an Ubuntu VPS on DigitalOcean(a popular VPS provider) directly running Node through some script like pm2 or nodemon connected to a postgres database
+A modern popular tech stack like this can be a React app as the client, an Ubuntu VPS on DigitalOcean(a popular VPS provider) directly running a node backend through some script like pm2 or nodemon, and that node backend stores and accesses data on a postgres database running in the VPS
 
-Running a VPS can be a bit intimidating and some companies, like Google's Firebase, have created services that trivialize this. Instead of creating your own backend app and maintaining your own database, you can just use Firebase which can act as your app server, web server, and database all in one. Also it's not neccesary that these are all just one ofs, you can have multiple app servers and multiple web servers depending on the need.
+Also it's not neccesary that these are all just one ofs, you can have multiple app servers and multiple web servers depending on the project need.
 
-Using either your own homebrewed app or using firebase (or other similar services) will both have varying pros and cons and which is best will depend on the situation
+Another part of the modern web include PAAS and IAAS apps, examples of these include the various AWS Services, Google Code, Firebase etc. They trivialize setting up your web app with the tradeoff being a higher price and/or less fine configuration controls. For example instead of creating your own backend app and maintaining your own database, you can just use Firebase which acts as your app server, web server, and database all in one but you are restricted to only using Firebase database (a NoSQL db) where you might want a SQL db like postgres. 
+
+Using either a homebrewed web app or using firebase (or other similar services) both have varying pros and cons. Whichever is best to use will depend on the situation
 
 # UNIT TESTING
 
