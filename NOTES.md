@@ -1,6 +1,6 @@
 
 
-- [MODERN WEB Architecture](#modern-web-architecture)
+- [MODERN WEB ARCHITECTURE](#modern-web-architecture)
 - [PREREQS](#prereqs)
 - [UNIT TESTING](#unit-testing)
   - [WHY UNIT TEST](#why-unit-test)
@@ -12,9 +12,9 @@
   - [HOW THINGS ARE MADE WITH REACT](#how-things-are-made-with-react)
   - [COMPONENTS](#components)
   - [useState and useEffect](#usestate-and-useeffect)
-  - [using state in class components](#using-state-in-class-components)
 
-# MODERN WEB Architecture
+# MODERN WEB ARCHITECTURE
+
 I'll mainly be talking about React and Node but...
 
 I feel that this is an important topic to tackle first to get some context on how node and react apps talk to each other
@@ -25,7 +25,9 @@ Client is everything that runs in a web browser, this is where the react code wi
 
 Next is the app server and the web server, this is where a typical node project will live. A web server can be a Linux VPS(Virtual Private Server) running Nginx to serve the app server which is a node app running in a docker container. The specific technology used isn't important, for example you can replace node with a PHP app being served directly by Apache on a Linux VPS
 
-The database usually runs on the web server itself and is there for data persistence, and the static assets include things like images, videos, sound files.
+The database usually runs on the web server itself and is there for data persistence.
+
+Static assets include things like images, videos, sound files.
 
 A modern popular tech stack like this can be a React app as the client, an Ubuntu VPS on DigitalOcean(a popular VPS provider) directly running a node backend through some script like pm2 or nodemon, and that node backend stores and accesses data on a postgres database running in the VPS
 
@@ -145,4 +147,5 @@ By default React is very barebones.
 
 ## useState and useEffect
 
-## using state in class components
+I'll just gloss over how useState and useEffect are usually used
+

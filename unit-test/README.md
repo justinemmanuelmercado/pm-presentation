@@ -4,14 +4,14 @@
 
 ### [Long article explaining why](https://dzone.com/articles/top-8-benefits-of-unit-testing)
 
-### My Reasoning
+### My reasoning
 1. Makes it easier to make changes in the long run
    - Accepting code changes from the open source community
    - Code refactors won't break anything with unit tests
    - Adding features to the app won't break anything with unit tests
 2. Documentation as a side effect
 
-## How to unit test in TS
+## How to unit test TS code
 
 ### [Great article explaining different ways use jest](http://zetcode.com/javascript/jest/)
 
@@ -24,7 +24,7 @@
 ### [Long article explaining how to set up jest](https://basarat.gitbook.io/typescript/intro-1/jest)
 ### [Possible matchers for expect](https://jestjs.io/docs/en/expect)
 
-### Short summary
+### To summarize
 
 1. We install `jest` and set it up to work with the current stack (in this folder it is set up to work with Typescript)
    - installed using `npm i --D jest`
