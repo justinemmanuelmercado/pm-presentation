@@ -29,7 +29,7 @@ export function App() {
     evt.preventDefault()
     console.log(apiUrl)
     try {
-      const { data } = await axios.post(`${apiUrl}/add`, { number1, number2 })
+      const { data } = await axios.post(`${apiUrl}/add`, { number1: Number(number1), number2: Number(number2) })
       const { result } = data
       setResult(result)
     } catch (e) {
