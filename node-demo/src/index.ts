@@ -17,6 +17,7 @@ app.post('/add', (req, res) => {
   const { number1, number2 } = req.body
   const result = number1 + number2
   res.send({ result })
+  res.status(200)
 })
 
 app.listen(port, () => {
