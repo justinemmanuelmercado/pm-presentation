@@ -12,6 +12,9 @@
   - [HOW THINGS ARE MADE WITH REACT](#how-things-are-made-with-react)
   - [COMPONENTS](#components)
   - [useState AND useEffect](#usestate-and-useeffect)
+- [NODE DEMO](#node-demo)
+
+Due to the amount of time available, I'll probably be not be going as in-depth over most of the topics. The main thing I wanted to do is hopefully to give a bigger picture of how everything works, from start to finish. I don't think this is going to be perfect but it should be enough as an introduction
 
 # MODERN WEB ARCHITECTURE
 
@@ -52,6 +55,8 @@ Two, is to atleast get npm installed locally. Installing npm with the link will 
 three, atleast soem basic familiarity with JS or TS syntax. This can be learned along the way but this will make it easier to understand with atleast some basic syntax know-how
 
 I have included some links to help supplement the pre-requisites
+
+**You can clone this repository yourself and test out and explore the code**
 
 # UNIT TESTING
 
@@ -150,4 +155,6 @@ By default React is very barebones.
 ## useState AND useEffect
 
 I'll just gloss over how useState and useEffect are usually used
+
+# NODE DEMO
 
