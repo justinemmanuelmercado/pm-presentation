@@ -9,6 +9,19 @@ const Header = (props: { title: string }) => {
   return <h1>{props.title}</h1>
 }
 
+
+// JS Counterpart
+// ReactDOM.render(
+//   React.createElement(Hello, {toWhat: 'World'}, null),
+//   document.getElementById('root')
+// )
+
+// JSX sample
+// ReactDOM.render(
+//   <Hello toWhat="World" />,
+//   document.getElementById('root')
+// )
+
 export function App() {
   const [isUp, setIsUp] = useState(false)
   const [result, setResult] = useState('')
@@ -32,7 +45,7 @@ export function App() {
 
   useEffect(() => {
     handleCheckApi()
-  })
+  }) // undefined, [], or [<value you want to observe>]
 
   const handleSubmit = async (evt: React.FormEvent<HTMLFormElement>) => {
     evt.preventDefault()
@@ -47,13 +60,15 @@ export function App() {
   }
 
   const handleChange = (evt: React.FormEvent<HTMLInputElement>) => {
-    console.log(evt.currentTarget.id)
     if(evt.currentTarget.id === "number1") {
+      console.log(evt.currentTarget.value)
       setNumber1(evt.currentTarget.value)
     } else {
       setNumber2(evt.currentTarget.value)
     }
   }
+
+
 
   return <div className="container">
     <Header title="Function component with hooks"/>
@@ -62,8 +77,8 @@ export function App() {
     </div>
     <div className="numbers-form">
       <form onSubmit={handleSubmit}>
-        <input id="number1" type="text" onChange={handleChange} placeholder="first number" />
-        <input id="number2" type="text" onChange={handleChange} placeholder="second number" />
+        <input id="number1" type="text" value={number1} onChange={handleChange} placeholder="first number" />
+        <input id="number2" type="text" value={number2} onChange={handleChange} placeholder="second number" />
         <button type='submit'>Add two numbers</button>
       </form>
     </div>
@@ -99,7 +114,9 @@ export function App() {
 //       }
 //     } catch (e) {
 //       console.error(e)
-//       setIsUp(false)
+//       this.setState({
+//         isUp: false
+//       })
 //     }
 //   }
 

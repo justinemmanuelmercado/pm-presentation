@@ -15,6 +15,13 @@ app.get('/check', function (req, res) {
         status: 'up'
     });
 });
+app.post('/add', function (req, res) {
+    var _a = req.body, number1 = _a.number1, number2 = _a.number2;
+    var result = number1 + number2;
+    console.log(req.body);
+    res.send({ result: result });
+    res.status(200);
+});
 app.listen(port, function () {
     console.log("Listening on port " + port);
 });

@@ -16,6 +16,7 @@ app.get('/check', (req, res) => {
 app.post('/add', (req, res) => {
   const { number1, number2 } = req.body
   const result = number1 + number2
+  console.log(req.body)
   res.send({ result: result })
   res.status(200)
 })

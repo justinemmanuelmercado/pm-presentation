@@ -22,7 +22,8 @@
 
 1. `cd` inside the [unit-test](/unit-test) directory
 2. Run `npm install`
-3. Run `npm test` to run the unit tests
+3. Run `npm run test` to run the unit tests
+4. Run `npm run test:watch` to run the unit tests in "watch" mode
 
 ## [React Demo](/react-demo)
 
