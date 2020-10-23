@@ -47,3 +47,10 @@ You can create branches in git, if you plan to work on your "own thing" without 
 ### Pull requests
 1. Pull requests are mostly on the actual UI itself and not really reliant on `git`, but basically PRs enable the team to interact with each other with regards to a branch  through a sort of forum interface
 2. You can do this manually through the GH website and all it needs is a `branch` pushed to the remote repository with the changes you want to "merge" back to master
+
+### Github
+There are many other git repository sites but Github is my favorite.
+
+Here you can create Issues (sort of like task tracking), PRs create your own wiki but one thing that github has over a lot of the other git repositories is GH actions. 
+
+GH actions allows you to create scripts (bash or npm scripts for example) that run automatically on GH's hardware
