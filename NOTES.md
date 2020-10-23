@@ -13,6 +13,9 @@
   - [COMPONENTS](#components)
   - [useState AND useEffect](#usestate-and-useeffect)
 - [NODE DEMO](#node-demo)
+- [GITHUB](#github)
+
+**NOTE: This is mostly for my use, this is just to track my train of thought when presenting things**
 
 Due to the amount of time available, I'll probably be not be going as in-depth over most of the topics. The main thing I wanted to do is hopefully to give a bigger picture of how everything works, from start to finish. I don't think this is going to be perfect but it should be enough as an introduction
 
@@ -94,7 +97,7 @@ there are more advanced ways to run tests for example we could use github action
 
 that's step one
 
-second and final step, write the unit tests for each “unit” of code. I'm still not 100% on what constitutes a “unit” of code but I did link to a discussion regarding the definiton of a “unit” of code. I'll be honest, it's really vague and I think it's more of a “if you know, you know” sort of deal. Again I won't go into too much detail as I think it's a bit nuanced discussion so you can judge for yourself.
+second and final step, write the unit tests for each "unit" of code. I'm still not 100% on what constitutes a "unit" of code but I did link to a discussion regarding the definiton of a "unit" of code. I'll be honest, it's really vague and I think it's more of a "if you know, you know" sort of deal. Again I won't go into too much detail as I think it's a bit nuanced discussion so you can judge for yourself.
 
 there aren't solid rules of when and how to write unit tests but conventionally unit tests are written before or in parallel with writing the "unit" to test. But nothing's actually stopping you from writing the tests after writing your code
 
@@ -158,3 +161,4 @@ I'll just gloss over how useState and useEffect are usually used
 
 # NODE DEMO
 
+# GITHUB
